@@ -4,8 +4,8 @@ import { AuthProvider } from "@/context/AuthenticationContext";
 import { ContextProvider } from "@/context/DashboardContext";
 
 export const metadata: Metadata = {
-  title: "IntelliResume",
-  description: "Ai-powered resume builder",
+  title: "IntelliResume - Your AI Resume Builder",
+  description: "Create professional resumes effortlessly with AI assistance. Tailor your resume to stand out in the job market.",
 };
 
 export default function RootLayout({
@@ -15,9 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`antialiased`}
-      >
+      <body>
         <AuthProvider>
           <ContextProvider>
             {children}
